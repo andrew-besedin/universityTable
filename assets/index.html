@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Table</title>
+</head>
+<body>
+    <h1>Расписание занятий</h1>
+    <table>
+        <tr>
+            <td>
+                <p>Группа</p>
+                <select class="group-select">
+                    <option value="251001">251001</option>
+                </select> 
+            </td>
+            <td>
+                <p>День недели</p>
+                <select class="weekday-select">
+                    <option value="Mon">Пн</option>
+                    <option value="Tue">Вт</option>
+                    <option value="Wed">Ср</option>
+                    <option value="Thu">Чт</option>
+                    <option value="Fri">Пт</option>
+                    <option value="Sat">Сб</option>
+                    <option value="Sun">Вс</option>
+                </select>  
+            </td>
+        </tr>
+    </table> 
+    <table class="main-table"></table>
+    <script src="index.js"></script>
+</body>
+</html>
