@@ -1,8 +1,9 @@
 const express = require("express");
 const { MongoClient } = require("mongodb");
+const dotenv = require("dotenv").config();
 
 const app = express();
-const client = new MongoClient("mongodb://localhost:27017");
+const client = new MongoClient(`mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/?authMechanism=DEFAULT`);
 
 app.use(express.static(__dirname + "/assets"));
 app.use(express.json());
